@@ -57,6 +57,7 @@ export default class Parallax extends Component {
         return (
             <div className="parallax" style={{background: `linear-gradient(180deg, ${this.state.colorPalette[0]} 0%, #FEFEFE 60.42%)`}}>
                 <div className="top-bar">
+                    <div className="logo-container">
                     <a className="logo" onClick={this.getNewPalette}>
                         <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="31" cy="31" r="31" fill="#1C2741"/>
@@ -64,6 +65,8 @@ export default class Parallax extends Component {
                             <path d="M19.7423 11.7775L13.0836 48.7491C12.99 49.2689 13.3858 49.7481 13.9139 49.7544L19.1759 49.8175C19.5715 49.8222 19.9186 49.5546 20.0146 49.1707L23.718 34.3638C23.9085 33.6023 24.9392 33.4796 25.3031 34.1751L33.2419 49.3468C33.3892 49.6283 33.6807 49.8048 33.9984 49.8049L39.4112 49.8059C40.0458 49.806 40.4588 49.1384 40.1755 48.5706L31.0422 30.264C30.8906 29.9601 30.9335 29.5953 31.1514 29.3348L45.2504 12.4811C45.7154 11.9253 45.3202 11.0793 44.5955 11.0792L38.3857 11.0781C38.1323 11.078 37.892 11.1905 37.7297 11.3851L27.1673 24.0511C26.5967 24.7354 25.491 24.1983 25.6761 23.3268L28.0593 12.1054C28.1721 11.5741 27.7669 11.0739 27.2238 11.074L20.5827 11.0748C20.1695 11.0749 19.8156 11.3708 19.7423 11.7775Z" fill="white"/>
                         </svg>
                     </a>
+                    <div className="logo-prompt" style={{color: this.state.colorPalette[6]}}>click me ^</div>
+                    </div>
                     {/* <img src={logo} alt="logo" className="logo" /> */}
                     <a href="#about" className="about-nav" style={{color: this.state.colorPalette[6]}} >About</a>
                 </div>
@@ -93,7 +96,7 @@ export default class Parallax extends Component {
                 </div>
                 <div className="parallax__cover" style={{background: this.state.colorPalette[6]}}>
                     <div className="scroll">
-                        Scroll
+                        Scroll ↓
                     </div>
                     <div className="about-container" id="about">
                         <div className="about-info">
