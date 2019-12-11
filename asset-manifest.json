@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46bdd5f6.chunk.css",
+    "main.js": "/static/js/main.3b50f8a6.chunk.js",
+    "main.js.map": "/static/js/main.3b50f8a6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.382fb0ab.js",
+    "runtime-main.js.map": "/static/js/runtime-main.382fb0ab.js.map",
+    "static/js/2.d01f5bf8.chunk.js": "/static/js/2.d01f5bf8.chunk.js",
+    "static/js/2.d01f5bf8.chunk.js.map": "/static/js/2.d01f5bf8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fd56826a2e3d16f1ba18f1bf48a3712b.js": "/precache-manifest.fd56826a2e3d16f1ba18f1bf48a3712b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.46bdd5f6.chunk.css.map": "/static/css/main.46bdd5f6.chunk.css.map",
+    "static/js/2.d01f5bf8.chunk.js.LICENSE": "/static/js/2.d01f5bf8.chunk.js.LICENSE",
+    "static/media/deer-dark.svg": "/static/media/deer-dark.65d2f4fe.svg",
+    "static/media/deer-light.svg": "/static/media/deer-light.fcce71fc.svg",
+    "static/media/github.svg": "/static/media/github.1420ade8.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.078c4268.svg",
+    "static/media/mail.svg": "/static/media/mail.459eda33.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.382fb0ab.js",
+    "static/js/2.d01f5bf8.chunk.js",
+    "static/css/main.46bdd5f6.chunk.css",
+    "static/js/main.3b50f8a6.chunk.js"
+  ]
+}
