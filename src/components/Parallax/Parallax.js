@@ -120,7 +120,7 @@ export default class Parallax extends Component {
                                 </a>
                             </div>
                         </div>
-                        <div className="deer-icon">
+                        <div className="deer-icons">
                             {/* <img src={deer} alt="deer-icon"/> */}
                             <img src={deer_light} alt="deer-icon"/>
                             <img src={deer_dark} alt="deer-icon"/>
