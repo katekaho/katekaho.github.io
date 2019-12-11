@@ -15,10 +15,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  // margin-left: -1500px;
 }
 
-// other styles classes for the screen size
+
+@keyframes pulse {
+  0% {
+    color: lightgray;
+  }
+}
+
+
 @media only screen and (max-width : 480px) {
   .logo {
     margin: 0 0 0 26px;
@@ -33,6 +39,7 @@
   .logo-prompt {
     font-size: 8px;
     margin-right: 10px;
+    animation: pulse 1s linear infinite;
   }
 
   .about-nav{
@@ -57,6 +64,7 @@
   .logo-prompt {
     font-size: 10px;
     margin-right: 10px;
+    animation: pulse 1s linear infinite;
   }
 
   .about-nav{

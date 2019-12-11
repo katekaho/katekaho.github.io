@@ -7,6 +7,7 @@ import deer_dark from './deer-dark.svg';
 import deer_light from './deer-light.svg'; 
 import Hill from '../Hill/Hill';
 import palette from 'google-palette';
+import Birds from '../Birds/Birds';
 
 // parallax credit goes to https://codepen.io/samdbeckham/pen/OPXPNp
 
@@ -70,6 +71,7 @@ export default class Parallax extends Component {
                     {/* <img src={logo} alt="logo" className="logo" /> */}
                     <a href="#about" className="about-nav" style={{color: this.state.colorPalette[6]}} >About</a>
                 </div>
+                <Birds/>
                 <div className="parallax__layer parallax__layer__1">
                     {/* <img src={layer_1} /> */}
                     <Hill topColor={this.state.colorPalette[1]} bottomColor="#FFFFFF"/>
