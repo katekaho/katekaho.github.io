@@ -14,13 +14,14 @@ import linkedin from './linkedin.svg';
 import mail from './mail.svg';
 import deer_dark from './deer-dark.svg';
 import deer_light from './deer-light.svg'; 
+import Hill from '../Hill/Hill';
 
 // parallax credit goes to https://codepen.io/samdbeckham/pen/OPXPNp
 
 export default class Parallax extends Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     render() {
         return (
@@ -30,25 +31,32 @@ export default class Parallax extends Component {
                     <a href="#about" className="about-nav" >About</a>
                 </div>
                 <div className="parallax__layer parallax__layer__0">
-                    <img src={layer_0} />
+                    {/* <img src={layer_0} /> */}
+                    <Hill topColor="#000000" bottomColor="#FFFFFF"/>
                 </div>
                 <div className="parallax__layer parallax__layer__1">
-                    <img src={layer_1} />
+                    {/* <img src={layer_1} /> */}
+                    <Hill topColor="#000000" bottomColor="#FFFFFF"/>
                 </div>
                 <div className="parallax__layer parallax__layer__2">
-                    <img src={layer_2} />
+                    {/* <img src={layer_2} />*/}
+                    <Hill topColor="#000000" bottomColor="#FFFFFF"/>
                 </div>
-                {/* <div className="parallax__layer parallax__layer__3">
-                    <img src={layer_3} />
-                </div> */}
+                <div className="parallax__layer parallax__layer__3">
+                    {/* <img src={layer_3} /> */}
+                    <Hill topColor="#000000" bottomColor="#FFFFFF"/>
+                </div>
                 <div className="parallax__layer parallax__layer__4">
-                    <img src={layer_4} />
+                    {/* <img src={layer_4} /> */}
+                    <Hill topColor="#000000" bottomColor="#FFFFFF"/>
                 </div>
                 <div className="parallax__layer parallax__layer__5">
-                    <img src={layer_5} />
+                    {/* <img src={layer_5} /> */}
+                    <Hill topColor="#000000" bottomColor="#FFFFFF"/>
                 </div>
                 <div className="parallax__layer parallax__layer__6">
-                    <img src={layer_6} />
+                    {/* <img src={layer_6} /> */}
+                    <Hill topColor="#3E5E5D" bottomColor="#3E5E5D"/>
                 </div>
                 <div className="parallax__cover">
                     <div className="scroll">
