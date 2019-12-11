@@ -18,7 +18,6 @@ export default class Hill extends Component {
 
         for (var x = 0; x < canvas.width; x++) { 
             let value = Math.abs(perlin2(x/60, canvas.height/90));
-            console.log(value)
             ctx.lineTo(x, canvas.height-(value*80)-150);
         }
         ctx.lineTo(canvas.width,300);
