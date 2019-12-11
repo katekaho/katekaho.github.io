@@ -5,9 +5,11 @@ import "./Hill.css";
 export default class Hill extends Component {
     constructor(props) {
         super(props);
+        this.drawHills = this.drawHills.bind(this);
+        this.clearHills = this.clearHills.bind(this);
     }
 
-    componentDidMount() {
+    drawHills() {
         const canvas = this.refs.canvas;
         const ctx = canvas.getContext("2d");
 
@@ -27,7 +29,21 @@ export default class Hill extends Component {
         my_gradient.addColorStop(1, this.props.bottomColor);
         ctx.fillStyle = my_gradient;
         ctx.fill();
-        // ctx.stroke();
+    }
+
+    clearHills() {
+        const canvas = this.refs.canvas;
+        const ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    componentDidMount() {
+        this.drawHills();
+    }
+
+    componentDidUpdate() {
+        this.clearHills();
+        this.drawHills();
     }
 
     render() {
