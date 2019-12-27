@@ -9,7 +9,8 @@
   perspective: 100px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,15 +25,27 @@
   }
 }
 
+.logo {
+  height: 62px;
+}
+
 
 @media only screen and (max-width : 480px) {
   .logo {
+    padding: 0;
+    background: none;
+    border: none;
     margin: 0 0 0 26px;
     transition: all .2s ease-in-out;
     z-index: 10;
     &:hover {
       transform: scale(1.1);
       cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+      border-radius: 50%;
+      box-shadow: 0 0 2pt 2pt #8060bb;
     }
   }
 
@@ -52,12 +65,20 @@
 
 @media only screen and (min-width : 481px) {
   .logo {
+    padding: 0;
+    background: none;
+    border: none;
     margin: 0 0 0 100px;
     transition: all .2s ease-in-out;
     z-index: 10;
     &:hover {
       transform: scale(1.1);
       cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+      border-radius: 50%;
+      box-shadow: 0 0 2pt 2pt #8060bb;
     }
   }
 
