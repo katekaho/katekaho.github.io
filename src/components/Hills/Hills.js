@@ -14,7 +14,7 @@ export default class Hills extends Component {
         const ctx = canvas.getContext("2d");
 
         const initialHeight = 500;
-        let addedHeight = (position)*45;
+        let addedHeight = (position)*35;
 
         ctx.beginPath();
         ctx.moveTo(0,initialHeight+addedHeight);
@@ -27,7 +27,7 @@ export default class Hills extends Component {
         }
         ctx.lineTo(canvas.width,initialHeight);
         ctx.closePath();
-        var my_gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        var my_gradient = ctx.createLinearGradient(0, 0, 0, 350);
         my_gradient.addColorStop(0, 'white');
         my_gradient.addColorStop(1, this.props.palette[position]);
         ctx.fillStyle = my_gradient;

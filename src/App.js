@@ -11,6 +11,9 @@ import {
   Link
 } from "react-router-dom";
 import ThemeFontSelector from './components/ThemeFontSelector/ThemeFontSelector';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Art from './components/Art/Art';
 
 const paletteOptions = [
   'cb-Greys',
@@ -32,6 +35,8 @@ const paletteOptions = [
   'cb-YlOrRd'
 ]
 let previousColorOption = -1;
+
+
 function App() {
   
   
@@ -58,17 +63,17 @@ function App() {
     {
       path: "/about",
       sidebar: () => <Sidebar selected="about" palette={colorPalette}/>,
-      main: () => <h2>About</h2>
+      main: () => <About titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects",
       sidebar: () => <Sidebar selected="projects" palette={colorPalette}/>,
-      main: () => <h2>Projects</h2>
+      main: () => <Projects titleColor={colorPalette[6]}/>
     },
     {
       path: "/art",
       sidebar: () => <Sidebar selected="art" palette={colorPalette}/>,
-      main: () => <h2>Art</h2>
+      main: () => <Art titleColor={colorPalette[6]}/>
     }
   ]
 
