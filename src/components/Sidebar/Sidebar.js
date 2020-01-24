@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import {
+    Link
+} from "react-router-dom";
+
 import "./Sidebar.css";
 
 export default class Sidebar extends Component {
@@ -28,10 +32,10 @@ export default class Sidebar extends Component {
                 </div>
                 <div className="navbar-wrapper">
                     <ul className="navbar-list">
-                        <a href="#"><li className="navbar-item">Home</li></a>
-                        <a href="#"><li className="navbar-item">About me</li></a>
-                        <a href="#"><li className="navbar-item">Projects</li></a>
-                        <a href="#"><li className="navbar-item">Art</li></a>
+                            <Link to="/"><li className={this.props.selected === "home" ? "navbar-item selected" : "navbar-item"}>Home</li></Link>
+                            <Link to="/About"><li className={this.props.selected === "about" ? "navbar-item selected" : "navbar-item"}>About me</li></Link>
+                            <Link to="/Projects"><li className={this.props.selected === "projects" ? "navbar-item selected" : "navbar-item"}>Projects</li></Link>
+                            <Link to="/Art"><li className={this.props.selected === "art" ? "navbar-item selected" : "navbar-item"}>Art</li></Link>
                     </ul>
                 </div>
             </div>

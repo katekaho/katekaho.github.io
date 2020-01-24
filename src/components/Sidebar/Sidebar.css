@@ -44,8 +44,15 @@
     outline: solid 1px white;
 }
 
+.selected {
+    background-color: #DDE8F2;
+    color: #6E016B;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .navbar-item:hover {
-    background-color: #3B455B;
+    background-color: rgb(147, 154, 170);
 }
 
 a {
