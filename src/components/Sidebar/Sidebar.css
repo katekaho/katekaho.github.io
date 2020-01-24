@@ -30,6 +30,10 @@
     color: white;
 }
 
+.navbar-list .link {
+    text-decoration: none;
+}
+
 .navbar-item {
     height: 45px;
     text-align: center;
@@ -49,11 +53,7 @@
     background-color: rgb(147, 154, 170);
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
+.navbar-list {
     padding: 0;
     margin: 0;
     list-style-type: none;
