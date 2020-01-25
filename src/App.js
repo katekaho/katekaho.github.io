@@ -16,6 +16,10 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Art from './components/Art/Art';
 import ExpressHire from './components/Projects/ProjectPages/ExpressHire/ExpressHire';
+import ProjectGuppi from './components/Projects/ProjectPages/ProjectGuppi/ProjectGuppi';
+import ComponentCloner from './components/Projects/ProjectPages/ComponentCloner/ComponentCloner';
+import Causeway from './components/Projects/ProjectPages/Causeway/Causeway';
+import Cryptanna from './components/Projects/ProjectPages/Cryptanna/Cryptanna';
 
 const paletteOptions = [
   'cb-Greys',
@@ -83,7 +87,27 @@ function App() {
       path: "/projects/express-hire",
       sidebar: () => <Sidebar palette={colorPalette}/>,
       main: () => <ExpressHire titleColor={colorPalette[6]}/>
-    }
+    },
+    {
+      path: "/projects/component-cloner",
+      sidebar: () => <Sidebar palette={colorPalette}/>,
+      main: () => <ComponentCloner titleColor={colorPalette[6]}/>
+    },
+    {
+      path: "/projects/project-guppi",
+      sidebar: () => <Sidebar palette={colorPalette}/>,
+      main: () => <ProjectGuppi titleColor={colorPalette[6]}/>
+    },
+    {
+      path: "/projects/causeway",
+      sidebar: () => <Sidebar palette={colorPalette}/>,
+      main: () => <Causeway titleColor={colorPalette[6]}/>
+    },
+    {
+      path: "/projects/cryptanna",
+      sidebar: () => <Sidebar palette={colorPalette}/>,
+      main: () => <Cryptanna titleColor={colorPalette[6]}/>
+    },
   ]
 
   let updateColor = () => {

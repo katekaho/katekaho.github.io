@@ -12,19 +12,23 @@ const projects = [
     },
     {
         'projectTitle': 'Component Cloner',
-        'imageName': 'ComponentCloner'
+        'imageName': 'ComponentCloner',
+        'pageName': 'component-cloner'
     },
     {
         'projectTitle': 'Project GUPPI',
-        'imageName': 'Guppi'
+        'imageName': 'Guppi',
+        'pageName': 'project-guppi'
     },
     {
         'projectTitle': 'Causeway Homepage',
-        'imageName': 'Causeway'
+        'imageName': 'Causeway',
+        'pageName': 'causeway'
     },
     {
         'projectTitle': 'Cryptanna',
-        'imageName': 'Cryptanna'
+        'imageName': 'Cryptanna',
+        'pageName': 'cryptanna'
     },
 ]
 

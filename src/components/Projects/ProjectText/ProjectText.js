@@ -17,7 +17,7 @@ function ProjectText(props) {
             <h3 className="project-summary">{props.projectSummary}</h3>
             <h2 className="project-role">My role</h2>
             <p className="role-info">{props.role}</p>
-            {   props.tasks.length > 0 &&
+            {props.tasks && props.tasks.length > 0 &&
                 <div className="tasks">
                     <h2>Key responsibilities</h2>
                     <ul>

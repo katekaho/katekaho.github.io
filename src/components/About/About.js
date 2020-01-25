@@ -32,7 +32,7 @@ function About(props) {
             </div>
 
             <div className="readings">
-                <h3>Here are some design books I've read and enjoyed</h3>
+                <h3>Design books I've read and enjoyed</h3>
                 <div className="books">
                     <p>Envisioning Information by Edward Tufte</p>
                     <p>The Design of Everyday Things by Don Norman</p>
