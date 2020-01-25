@@ -20,6 +20,7 @@ import ProjectGuppi from './components/Projects/ProjectPages/ProjectGuppi/Projec
 import ComponentCloner from './components/Projects/ProjectPages/ComponentCloner/ComponentCloner';
 import Causeway from './components/Projects/ProjectPages/Causeway/Causeway';
 import Cryptanna from './components/Projects/ProjectPages/Cryptanna/Cryptanna';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 const paletteOptions = [
   'cb-Greys',
@@ -135,6 +136,7 @@ function App() {
                                 fontFamily: defaultFont ? null : 'OpenDyslexic'}
                                 }>
       <Router>
+        <ScrollToTop/>
         <Switch>
             {routes.map((route, index) => (
               <Route 
