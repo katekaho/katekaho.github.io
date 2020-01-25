@@ -24,7 +24,7 @@ function ExpressHire(props) {
                 role="Once the inital setup was completed, I was tasked with creating metrics to display relevant charts, graphs, and statistics involving the hiring process for the hiring leaders dashboard. I also created a round robin scheduler to match candidate and interviewer times, ensuring each interviewer got an equal workload."
                 tasks={tasks}
             />
-            <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>
+            <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
             <BottomNav/>
         </div>
     )

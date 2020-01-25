@@ -24,7 +24,7 @@ function Causeway(props) {
                 <img className="screenshot-item" alt="Causeway homepage bottom" src={causewayHome2}/>
             </div>
             
-            <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>
+            <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
             <BottomNav/>
         </div>
     )

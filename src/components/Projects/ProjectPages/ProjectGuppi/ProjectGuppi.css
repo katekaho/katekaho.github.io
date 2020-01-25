@@ -5,3 +5,8 @@
 .sponsors-day {
     margin: 60px 0 0 0;
 }
+
+.sponsor-day {
+    margin: 0 10px 10px 0;
+    max-width: 100%;
+}

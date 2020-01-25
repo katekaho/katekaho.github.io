@@ -40,7 +40,7 @@ function Cryptanna(props) {
                     <h3>New layout</h3>
                 </div>
             </div>
-            <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>
+            <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
             <BottomNav/>
         </div>
     )

@@ -19,7 +19,7 @@ function ComponentCloner(props) {
             <h2 className="cc-link"><a href="https://www.figma.com/c/plugin/736564662640346811/Component-Cloner">View the project page</a></h2>
             <h2 className="user-flow-label">User flow diagram</h2>
             <img className="cc-user-flow" src={CCUserFlow} alt="component cloner user flow diagram"/>
-            <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>
+            <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
             <BottomNav/>
         </div>
     )
