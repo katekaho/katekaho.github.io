@@ -1,0 +1,9 @@
+.btm-nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btm-nav-item {
+    list-style-type: none;
+    margin: 30px 16px;
+}

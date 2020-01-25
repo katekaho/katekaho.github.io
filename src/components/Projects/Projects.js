@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import PageHeader from '../PageHeader/PageHeader';
+import BottomNav from '../BottomNav/BottomNav';
 
 function Projects(props) {
     return (
@@ -11,6 +12,7 @@ function Projects(props) {
                 subtitle="Development and design work"
                 description="I’ve had the opportunity to work on some cool projects. Here are a few examples. "
             />
+            <BottomNav currentPage="projects"/>
         </div>
     )
 }

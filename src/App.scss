@@ -3,6 +3,10 @@
   overflow-x: hidden;
 }
 
+button {
+  font-size: 18px;
+}
+
 h1,h2,h3,h4,h5,li,p {
   margin: 0;
   color: #565656;
@@ -16,24 +20,27 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 h5 {
-  font-size: 12px;
+  font-size: 16px;
+}
+
+p {
+  font-size: 20px;
 }
 
 li {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 34px;
   padding: 10px 0;
 }

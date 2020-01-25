@@ -3,6 +3,7 @@ import './App.scss';
 import Home from './components/Home/Home';
 import Sidebar from './components/Sidebar/Sidebar';
 import palette from 'google-palette';
+import { AnimatedSwitch } from 'react-router-transition';
 
 import {
   BrowserRouter as Router,
@@ -120,8 +121,6 @@ function App() {
                             setColorGray={setToGray}
                             setFontDefault={setToDefaultFont}
                             setFontDyslexic={setToDyslexicFont}/>
-
-          <Switch>
             {routes.map((route, index) => (
               <Route 
                 key={index}
@@ -129,8 +128,7 @@ function App() {
                 exact={route.exact}
                 children={<route.main />}
               />
-            ))}       
-          </Switch>
+            ))}
         </div>
       </Router>
     </div>
