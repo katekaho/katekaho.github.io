@@ -26,15 +26,20 @@ function About(props) {
                 <h3><a href="https://www.linkedin.com/in/katekaho/">
                         Connect with me on LinkedIn</a></h3>
             </div>
-            <div className="readings">
-                <h3>Readings</h3>
-                <p>Envisioning Information by Edward Tufte</p>
-                <p>The Design of Everyday Things by Don Norman</p>
-                <p>The Pocket Universal Principles of Design by William Lidwell</p>
-            </div>
+
             <div className="hobbies">
-                <p>Other hobbies include <Link to="/Art">painting</Link>, skateboarding, and hiking.</p>
+                <h3>My hobbies include <Link to="/Art">painting</Link>, reading, fencing, skateboarding, and hiking.</h3>
             </div>
+
+            <div className="readings">
+                <h3>Here are some design books I've read and enjoyed</h3>
+                <div className="books">
+                    <p>Envisioning Information by Edward Tufte</p>
+                    <p>The Design of Everyday Things by Don Norman</p>
+                    <p>The Pocket Universal Principles of Design by William Lidwell</p>
+                </div>
+            </div>
+            
             <BottomNav currentPage="about"/>
         </div>
     )

@@ -38,19 +38,19 @@ export default class Sidebar extends Component {
                                                     color: this.props.selected === "home" ? this.props.palette[4] : 'white'}
                                                 }
                                         >Home</li></Link>
-                            <Link className="link" to="/About"><li className={this.props.selected === "about" ? "navbar-item selected" : "navbar-item"}
+                            <Link className="link" to="/about"><li className={this.props.selected === "about" ? "navbar-item selected" : "navbar-item"}
                                                 style={
                                                     {backgroundColor: this.props.selected === "about" ? '#DDE8F2' : this.props.palette[4],
                                                     color: this.props.selected === "about" ? this.props.palette[4] : 'white'}
                                                 }
                                         >About me</li></Link>
-                            <Link className="link" to="/Projects"><li className={this.props.selected === "projects" ? "navbar-item selected" : "navbar-item"}
+                            <Link className="link" to="/projects"><li className={this.props.selected === "projects" ? "navbar-item selected" : "navbar-item"}
                                                 style={
                                                     {backgroundColor: this.props.selected === "projects" ? '#DDE8F2' : this.props.palette[4],
                                                     color: this.props.selected === "projects" ? this.props.palette[4] : 'white'}
                                                 }
                                         >Projects</li></Link>
-                            <Link className="link" to="/Art"><li className={this.props.selected === "art" ? "navbar-item selected" : "navbar-item"}
+                            <Link className="link" to="/art"><li className={this.props.selected === "art" ? "navbar-item selected" : "navbar-item"}
                                                 style={
                                                     {backgroundColor: this.props.selected === "art" ? '#DDE8F2' : this.props.palette[4],
                                                     color: this.props.selected === "art" ? this.props.palette[4] : 'white'}

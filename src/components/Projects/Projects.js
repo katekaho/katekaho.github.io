@@ -7,7 +7,8 @@ import ProjectCard from './ProjectCard/ProjectCard';
 const projects = [
     {
         'projectTitle': 'Express Hire',
-        'imageName': 'ExpressHire'
+        'imageName': 'ExpressHire',
+        'pageName': 'express-hire'
     },
     {
         'projectTitle': 'Component Cloner',
@@ -34,15 +35,21 @@ function Projects(props) {
                 titleColor={props.titleColor}
                 title="Projects"
                 subtitle="Development and design work"
-                description="I’ve had the opportunity to work on some cool projects. Here are a few examples. "
+                description="I’ve had the opportunity to work on some cool projects. Here's a few examples. "
             />
+
+            <div className="check-github">
+                <h3><a href="https://github.com/katekaho">Check out my Github for more.</a></h3>
+            </div>
+            
 
             <div className="project-cards">
                 {
                     projects.map(project => {
                         return <ProjectCard 
                                 projectTitle={project.projectTitle} 
-                                imageName={project.imageName}/>
+                                imageName={project.imageName}
+                                pageName={project.pageName}/>
                     })
                 }
             </div>

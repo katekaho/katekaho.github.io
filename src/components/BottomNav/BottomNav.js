@@ -9,13 +9,13 @@ function BottomNav(props) {
                 <Link to="/">Home</Link>
             </li>
             <li className="btm-nav-item" style={{fontWeight: props.currentPage === 'about' ? 'bold' : 'normal'}}>
-                <Link to="/About">About me</Link>
+                <Link to="/about">About me</Link>
             </li>
             <li className="btm-nav-item" style={{fontWeight: props.currentPage === 'projects' ? 'bold' : 'normal'}}>
-                <Link to="/Projects">Projects</Link>
+                <Link to="/projects">Projects</Link>
             </li>
             <li className="btm-nav-item" style={{fontWeight: props.currentPage === 'art' ? 'bold' : 'normal'}}>
-                <Link to="/Art">Art</Link>
+                <Link to="/art">Art</Link>
             </li>
         </div>
     )

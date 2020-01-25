@@ -15,6 +15,7 @@ import ThemeFontSelector from './components/ThemeFontSelector/ThemeFontSelector'
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Art from './components/Art/Art';
+import ExpressHire from './components/Projects/ProjectPages/ExpressHire/ExpressHire';
 
 const paletteOptions = [
   'cb-Greys',
@@ -68,13 +69,20 @@ function App() {
     },
     {
       path: "/projects",
+      exact: true,
       sidebar: () => <Sidebar selected="projects" palette={colorPalette}/>,
       main: () => <Projects titleColor={colorPalette[6]}/>
     },
     {
       path: "/art",
+      exact: true,
       sidebar: () => <Sidebar selected="art" palette={colorPalette}/>,
       main: () => <Art titleColor={colorPalette[6]}/>
+    },
+    {
+      path: "/projects/express-hire",
+      sidebar: () => <Sidebar palette={colorPalette}/>,
+      main: () => <ExpressHire titleColor={colorPalette[6]}/>
     }
   ]
 
