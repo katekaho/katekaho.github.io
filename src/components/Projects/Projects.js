@@ -39,7 +39,7 @@ function Projects(props) {
                 titleColor={props.titleColor}
                 title="Projects"
                 subtitle="Development and design work"
-                description="I’ve had the opportunity to work on some cool projects. Here's a few examples. "
+                description="I’ve had the opportunity to work on some cool projects. Here are a few examples. "
             />
 
             <div className="check-github">

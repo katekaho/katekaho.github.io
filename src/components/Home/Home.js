@@ -19,7 +19,7 @@ export default class Home extends Component {
                         titleColor={this.props.palette[6]}
                         title="Hello"
                         subtitle="Welcome to my personal website"
-                        description="I’m Kate Miller, a software developer living in California. I’m interested in design and using technology for social good."
+                        description="I’m Kate Miller, a software developer from California. My interests include design, sustainability, and using technology for social good."
                     />
                 </div>
                 <Hills palette={this.props.palette}/>

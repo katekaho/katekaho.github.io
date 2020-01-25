@@ -1,0 +1,9 @@
+.crypt-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 20px 0;
+}
+
+.crypt-logo {
+    margin: 0 30px 20px 0;
+}

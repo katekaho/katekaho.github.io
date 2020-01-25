@@ -1,0 +1,12 @@
+.screenshots {
+    margin: 30px 0 18px 0;
+}
+
+.screenshot-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screenshot-item {
+    margin: 0 12px 50px 0;
+}

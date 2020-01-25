@@ -3,11 +3,12 @@ import ProjectText from '../../ProjectText/ProjectText';
 import { Link } from 'react-router-dom';
 import BottomNav from '../../../BottomNav/BottomNav';
 import './ProjectGuppi.css';
+import GuppiPresentation from '../../../images/GuppiPresentation.png';
+import GuppiPoster from '../../../images/GuppiPoster.png';
 
 
 const tasks = [
-    "Learn Python how Jupyter Notebook works and create a extension by reading API documentation and looking at examples of other extensions",
-    "Create an abstract class for cloud services to reduce code reuse",
+    "Create Jupyter Notebook extension by reading API documentation and looking at examples of other extensions",
     "Integrate Google Cloud Platform to manage instances",
     "Add functionality to SSH into instances to run commands across clusters of instances across different cloud services",
     "Meet with CISCO Security business group sponsors weekly to update on progress and recieve feedback"
@@ -25,6 +26,12 @@ function ProjectGuppi(props) {
                 role="I integrated Google Cloud API to allow users to create, start, stop, and restart their cloud instances. I created an abstract class for Cloud Services so users could easily switch between using Amazon Web Services or the Google Cloud Platform. I also incorperated Github API to allow users to view past commits on the project they were working on."
                 tasks={tasks}
             />
+            <h2><a href="https://github.com/katekaho/project-guppi">View the project page</a></h2>
+            <h2 className="sponsors-day">Winner of best presentation at Baskin School of Engineering Partner's Day 2019</h2>
+            <div className="screenshots">
+                <img className="screenshot" height="250px" src={GuppiPresentation} alt="Project Guppi team presenting at baskin partners day"/>
+                <img className="screenshot" height="250px" src={GuppiPoster} alt="Project Guppi team in front of project poster"/>
+            </div>
             <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>
             <BottomNav/>
         </div>

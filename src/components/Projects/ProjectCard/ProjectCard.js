@@ -10,7 +10,7 @@ export default function ProjectCard(props) {
         <div className="project-card">
             <div className="project-card-img">
                 <Link to={`${match.url}/${props.pageName}`}>
-                    <img height="110px" src={images(`./${props.imageName}.png`)}/>
+                    <img height="110px" alt={props.projectTitle} src={images(`./${props.imageName}.png`)}/>
                 </Link>
             </div>
 
