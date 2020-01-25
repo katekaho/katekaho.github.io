@@ -1,7 +1,6 @@
 import React from 'react';
 import './Projects.css';
 import PageHeader from '../PageHeader/PageHeader';
-import BottomNav from '../BottomNav/BottomNav';
 import ProjectCard from './ProjectCard/ProjectCard';
 
 const projects = [
@@ -57,8 +56,6 @@ function Projects(props) {
                     })
                 }
             </div>
-
-            <BottomNav currentPage="projects"/>
         </div>
     )
 }

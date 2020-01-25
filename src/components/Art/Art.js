@@ -12,7 +12,6 @@ function Art(props) {
                 subtitle="Painting and more"
                 description="In my free time I like to dabble in creating art. Here are some of my past works."
             />
-            <BottomNav currentPage="art"/>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 .App {
   display: flex;
   overflow-x: hidden;
+  flex-direction: column;
 }
 
 button {

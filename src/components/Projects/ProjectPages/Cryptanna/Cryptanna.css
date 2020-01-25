@@ -7,3 +7,7 @@
 .crypt-logo {
     margin: 0 30px 20px 0;
 }
+
+.crypt-img {
+    max-width: 100%;
+}

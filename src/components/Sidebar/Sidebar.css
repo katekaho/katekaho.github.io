@@ -1,20 +1,16 @@
 .sidebar-wrapper {
     background-color: #6E016b;
     overflow-x: hidden;
-    min-width: 350px;
-    max-width: 350px;
-    min-height: 100vh;
     text-align: center;
 }
 
 .logo {
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .header-info {
     display: flex;
     flex-direction: column;
-    height: 400px;
 }
 
 .site-title {
@@ -24,6 +20,7 @@
 
 .site-title-caption {
     font-size: 18px;
+    margin: 0 0 15px 0;
 }
 
 .site-title, .site-title-caption {
@@ -55,6 +52,6 @@
 
 .navbar-list {
     padding: 0;
-    margin: 0;
+    margin: 30px 0 40px 0;
     list-style-type: none;
 }

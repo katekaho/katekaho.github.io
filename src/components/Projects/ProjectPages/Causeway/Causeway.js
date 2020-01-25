@@ -20,8 +20,8 @@ function Causeway(props) {
             <h2><a href="https://causeway.soe.ucsc.edu/#/">View the site here</a></h2>
             <h2 className="screenshots">Screenshots</h2>
             <div className="screenshot-container">
-                <img className="screenshot-item" alt="Causeway homepage top" height="250px" src={causewayHome1}/>
-                <img className="screenshot-item" alt="Causeway homepage bottom" height="250px" src={causewayHome2}/>
+                <img className="screenshot-item" alt="Causeway homepage top" src={causewayHome1}/>
+                <img className="screenshot-item" alt="Causeway homepage bottom" src={causewayHome2}/>
             </div>
             
             <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>

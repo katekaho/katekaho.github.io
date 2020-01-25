@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import Home from './components/Home/Home';
 import Sidebar from './components/Sidebar/Sidebar';
 import palette from 'google-palette';
-import { AnimatedSwitch } from 'react-router-transition';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  withRouter
 } from "react-router-dom";
 import ThemeFontSelector from './components/ThemeFontSelector/ThemeFontSelector';
 import About from './components/About/About';
@@ -21,6 +20,7 @@ import ComponentCloner from './components/Projects/ProjectPages/ComponentCloner/
 import Causeway from './components/Projects/ProjectPages/Causeway/Causeway';
 import Cryptanna from './components/Projects/ProjectPages/Cryptanna/Cryptanna';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import BottomNav from './components/BottomNav/BottomNav';
 
 const paletteOptions = [
   'cb-Greys',
@@ -44,7 +44,7 @@ const paletteOptions = [
 let previousColorOption = -1;
 
 
-function App() {
+function App(props) {
   
   
   let randomOption;
@@ -65,48 +65,57 @@ function App() {
       path: "/",
       exact: true,
       sidebar: () => <Sidebar selected="home" palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]} currentPage={"home"}/>,
       main: () => <Home palette={colorPalette}/>
     },
     {
       path: "/about",
       sidebar: () => <Sidebar selected="about" palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]} currentPage={"about"}/>,
       main: () => <About titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects",
       exact: true,
       sidebar: () => <Sidebar selected="projects" palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]} currentPage={"projects"}/>,
       main: () => <Projects titleColor={colorPalette[6]}/>
     },
     {
       path: "/art",
       exact: true,
       sidebar: () => <Sidebar selected="art" palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]} currentPage={"art"}/>,
       main: () => <Art titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/express-hire",
       sidebar: () => <Sidebar palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]}/>,
       main: () => <ExpressHire titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/component-cloner",
       sidebar: () => <Sidebar palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]}/>,
       main: () => <ComponentCloner titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/project-guppi",
       sidebar: () => <Sidebar palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]}/>,
       main: () => <ProjectGuppi titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/causeway",
       sidebar: () => <Sidebar palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]}/>,
       main: () => <Causeway titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/cryptanna",
       sidebar: () => <Sidebar palette={colorPalette}/>,
+      bottombar: () => <BottomNav backgroundColor={colorPalette[6]}/>,
       main: () => <Cryptanna titleColor={colorPalette[6]}/>
     },
   ]
@@ -137,6 +146,15 @@ function App() {
                                 }>
       <Router>
         <ScrollToTop/>
+
+        <ThemeFontSelector 
+            palette={colorPalette} 
+            newColor={updateColor} 
+            setColorGray={setToGray}
+            setFontDefault={setToDefaultFont}
+            setFontDyslexic={setToDyslexicFont}/>
+
+
         <Switch>
             {routes.map((route, index) => (
               <Route 
@@ -149,12 +167,15 @@ function App() {
         </Switch>
 
         <div className="main-content">
+{/* 
+          <ThemeFontSelector 
+            palette={colorPalette} 
+            newColor={updateColor} 
+            setColorGray={setToGray}
+            setFontDefault={setToDefaultFont}
+            setFontDyslexic={setToDyslexicFont}/> */}
+                            
 
-          <ThemeFontSelector palette={colorPalette} 
-                            newColor={updateColor} 
-                            setColorGray={setToGray}
-                            setFontDefault={setToDefaultFont}
-                            setFontDyslexic={setToDyslexicFont}/>
             {routes.map((route, index) => (
               <Route 
                 key={index}
@@ -164,6 +185,16 @@ function App() {
               />
             ))}
         </div>
+
+        {routes.map((route, index) => (
+              <Route 
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                children={<route.bottombar />}
+              />
+            ))}
+
       </Router>
     </div>
   );

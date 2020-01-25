@@ -22,22 +22,22 @@ function Cryptanna(props) {
             <h2><a href="https://www.cryptanna.com/">View Cryptanna's website here</a></h2>
             <div className="crypt-screenshots">
                 <div className="crypt-logo">
-                    <img height="100px" src={CryptannaOriginal} alt="Original cryptanna logo"/>
+                    <img className="crypt-img" src={CryptannaOriginal} alt="Original cryptanna logo"/>
                     <h3>Original logo</h3>
                 </div>
                 <div className="crypt-logo">
-                    <img height="100px" src={CryptannaNew} alt="New cryptanna logo"/>
+                    <img className="crypt-img" src={CryptannaNew} alt="New cryptanna logo"/>
                     <h3>New logo</h3>
                 </div>
             </div>
             <div className="crypt-screenshots">
                 <div className="crypt-logo">
-                    <img height="250px" src={CryptannaOriginalScreens} alt="Original cryptanna user UI design"/>
-                    <h3>Original logo</h3>
+                    <img className="crypt-img" src={CryptannaOriginalScreens} alt="Original cryptanna user UI design"/>
+                    <h3>Original layout</h3>
                 </div>
                 <div className="crypt-logo">
-                    <img height="250px" src={CryptannaNewScreens} alt="New cryptanna UI design"/>
-                    <h3>New logo</h3>
+                    <img className="crypt-img" src={CryptannaNewScreens} alt="New cryptanna UI design"/>
+                    <h3>New layout</h3>
                 </div>
             </div>
             <h4 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h4>

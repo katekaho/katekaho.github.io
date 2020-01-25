@@ -13,8 +13,10 @@ export default class Hills extends Component {
         const canvas = this.refs.canvas;
         const ctx = canvas.getContext("2d");
 
+        // ctx.canvas.width = window.innerWidth;
+
         const initialHeight = 500;
-        let addedHeight = (position)*35;
+        let addedHeight = (position)*55;
 
         ctx.beginPath();
         ctx.moveTo(0,initialHeight+addedHeight);
@@ -22,12 +24,12 @@ export default class Hills extends Component {
         seed(Math.random());
 
         for (var x = 0; x < canvas.width; x++) { 
-            let value = Math.abs(perlin2(x/60, canvas.height/90));
-            ctx.lineTo(x, canvas.height-(value*90)-350+addedHeight);
+            let value = Math.abs(perlin2(x/42, canvas.height/300));
+            ctx.lineTo(x, canvas.height-(value*90)-450+addedHeight);
         }
         ctx.lineTo(canvas.width,initialHeight);
         ctx.closePath();
-        var my_gradient = ctx.createLinearGradient(0, 0, 0, 350);
+        var my_gradient = ctx.createLinearGradient(0, 0, 0, 550);
         my_gradient.addColorStop(0, 'white');
         my_gradient.addColorStop(1, this.props.palette[position]);
         ctx.fillStyle = my_gradient;
@@ -53,7 +55,7 @@ export default class Hills extends Component {
 
     render() {
         return (
-            <canvas className="canvas" ref="canvas" width="1700px" height="400px"></canvas>
+            <canvas className="canvas" ref="canvas" width="700px" height="500px"></canvas>
         )
     }
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import PageHeader from '../PageHeader/PageHeader';
 import { Link } from 'react-router-dom';
-import BottomNav from '../BottomNav/BottomNav';
 
 function About(props) {
     return (
@@ -38,9 +37,7 @@ function About(props) {
                     <p>The Design of Everyday Things by Don Norman</p>
                     <p>The Pocket Universal Principles of Design by William Lidwell</p>
                 </div>
-            </div>
-            
-            <BottomNav currentPage="about"/>
+            </div>            
         </div>
     )
 }
