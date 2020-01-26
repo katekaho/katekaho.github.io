@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import Sidebar from './components/Sidebar/Sidebar';
 import palette from 'google-palette';
 import { useMediaQuery } from 'react-responsive';
+import { AnimatedSwitch } from 'react-router-transition';
 
 import {
   Switch,
@@ -173,6 +174,8 @@ function App() {
             ))}       
         </Switch>
 
+        
+
         <div className="main-content">
         {isDesktopOrLaptop && <ThemeFontSelector 
             palette={colorPalette} 
@@ -180,6 +183,28 @@ function App() {
             setColorGray={setToGray}
             setFontDefault={setToDefaultFont}
             setFontDyslexic={setToDyslexicFont}/>}
+
+          <AnimatedSwitch atEnter={{ opacity: 0 }}
+              atLeave={{ opacity: 0 }}
+              atActive={{ opacity: 1 }}
+              mapStyles={(styles) => {
+                if (!isDesktopOrLaptop) {
+                  return {
+                      position: (styles.foo <= 1) ? 'relative': 'absolute',
+                      width: '100%',
+                      height: '100%',
+                      opacity: styles.opacity
+                  }
+                } else {
+                  return {
+                    position: (styles.foo <= 1) ? 'relative': 'absolute',
+                    width: 'calc(100% - 300px)',
+                    height: 'calc(100vh - 500px)',
+                    opacity: styles.opacity
+                  }
+                }
+              }}
+              className="switch-wrapper">
 
             {routes.map((route, index) => (
               <Route 
@@ -189,18 +214,13 @@ function App() {
                 children={<route.main />}
               />
             ))}
+          </AnimatedSwitch>
         </div>
+        
 
       </div>
 
-        {routes.map((route, index) => (
-              <Route 
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.bottombar />}
-              />
-            ))}
+        
 
       </HashRouter>
     </div>

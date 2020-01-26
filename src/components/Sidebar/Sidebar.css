@@ -1,14 +1,16 @@
 .sidebar-wrapper {
-    background-color: #6E016b;
     overflow-x: hidden;
     text-align: center;
+    z-index: 10;
+    opacity: 70%;
 }
 
 @media only screen and (min-width: 768px) {
     .sidebar-wrapper {
         order: -1;
         min-width: 300px;
-        min-height: 100vh;
+        border-radius: 0 0 40px 0;
+        /* position: fixed; */
     }
 }
 
@@ -69,4 +71,10 @@
     padding: 0;
     margin: 20px 0 20px 0;
     list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-list {
+        margin: 20px 0 40px 0;
+    }
 }

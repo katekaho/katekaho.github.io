@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./Home.css";
 import Hills from '../Hills/Hills';
 import PageHeader from '../PageHeader/PageHeader'
+import BottomNav from '../BottomNav/BottomNav';
 
 // parallax credit goes to https://codepen.io/samdbeckham/pen/OPXPNp
 

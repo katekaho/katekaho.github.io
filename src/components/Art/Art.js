@@ -2,6 +2,7 @@ import React from 'react';
 import './Art.css';
 import PageHeader from '../PageHeader/PageHeader';
 import ImageGallery from 'react-image-gallery';
+import BottomNav from '../BottomNav/BottomNav';
 
   
 function importAll(r) {
@@ -203,6 +204,7 @@ const images = [
                 description="In my free time I like to dabble in creating art. Here are some of my past works."
             />
             <ImageGallery items={images} className="image-gallery" showPlayButton={false}/>
+            <BottomNav backgroundColor={props.titleColor} currentPage={"art"}/>
         </div>
     )
 }

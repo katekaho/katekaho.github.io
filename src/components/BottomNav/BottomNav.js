@@ -4,7 +4,7 @@ import './BottomNav.css';
 
 function BottomNav(props) {
     return (
-        <div className="btm-nav-container" style={{backgroundColor: props.backgroundColor}}>
+        <div className="btm-nav-container">
             <li className="btm-nav-item" style={{fontWeight: props.currentPage === 'home' ? 'bold' : 'normal'}}>
                 <Link to="/">Home</Link>
             </li>
