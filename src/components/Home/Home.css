@@ -1,6 +1,6 @@
 .home-container {
     display: flex;
-    width: calc(100vw - 450px);
+    width: 100vw;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -9,6 +9,7 @@
 
     .home-container {
         height: calc(100vh - 110px);
+        width: calc(100vw - 450px);
     }
 
     .top-content-container {

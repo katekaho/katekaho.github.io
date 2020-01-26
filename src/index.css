@@ -2,6 +2,7 @@
   font-family: 'OpenDyslexic';
   src: local('OpenDyslexic'), url(./fonts/OpenDyslexic-Regular.otf) format('truetype');
 }
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 body {
   margin: 0;
