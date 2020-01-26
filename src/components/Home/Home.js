@@ -6,9 +6,6 @@ import PageHeader from '../PageHeader/PageHeader'
 // parallax credit goes to https://codepen.io/samdbeckham/pen/OPXPNp
 
 export default class Home extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

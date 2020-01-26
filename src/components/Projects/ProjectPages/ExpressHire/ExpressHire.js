@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectText from '../../ProjectText/ProjectText';
 import { Link } from 'react-router-dom';
-import BottomNav from '../../../BottomNav/BottomNav';
 
 
 const tasks = [

@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 import "./ThemeFontSelector.css";
 
 export default class ThemeFontSelector extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="selector-wrapper">

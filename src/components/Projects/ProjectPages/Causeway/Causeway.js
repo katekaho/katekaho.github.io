@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectText from '../../ProjectText/ProjectText';
 import { Link } from 'react-router-dom';
-import BottomNav from '../../../BottomNav/BottomNav';
 import './Causeway.css';
 import causewayHome1 from '../../../images/CausewayHome1.png';
 import causewayHome2 from '../../../images/CausewayHome2.png';

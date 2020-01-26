@@ -1,10 +1,9 @@
 import React from 'react';
 import ProjectText from '../../ProjectText/ProjectText';
 import { Link } from 'react-router-dom';
-import BottomNav from '../../../BottomNav/BottomNav';
 import './ProjectGuppi.css';
-import GuppiPresentation from '../../../images/GuppiPresentation.png';
-import GuppiPoster from '../../../images/GuppiPoster.png';
+import GuppiPresentation from '../../../images/GuppiPresentation.jpg';
+import GuppiPoster from '../../../images/GuppiPoster.jpg';
 
 
 const tasks = [
@@ -29,8 +28,8 @@ function ProjectGuppi(props) {
             <h2><a href="https://github.com/katekaho/project-guppi">View the project page</a></h2>
             <h2 className="sponsors-day">Winner of best presentation at Baskin School of Engineering Partner's Day 2019</h2>
             <div className="screenshots">
-                <img className="sponsor-day" height="250px" src={GuppiPresentation} alt="Project Guppi team presenting at baskin partners day"/>
-                <img className="sponsor-day" height="250px" src={GuppiPoster} alt="Project Guppi team in front of project poster"/>
+                <img className="sponsor-day" src={GuppiPresentation} alt="Project Guppi team presenting at baskin partners day"/>
+                <img className="sponsor-day" src={GuppiPoster} alt="Project Guppi team in front of project poster"/>
             </div>
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
         </div>

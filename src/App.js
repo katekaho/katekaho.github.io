@@ -6,10 +6,8 @@ import palette from 'google-palette';
 import { useMediaQuery } from 'react-responsive';
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
-  withRouter,
   HashRouter
 } from "react-router-dom";
 import ThemeFontSelector from './components/ThemeFontSelector/ThemeFontSelector';
