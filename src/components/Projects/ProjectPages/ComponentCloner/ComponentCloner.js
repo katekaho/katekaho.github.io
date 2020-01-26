@@ -20,7 +20,6 @@ function ComponentCloner(props) {
             <h2 className="user-flow-label">User flow diagram</h2>
             <img className="cc-user-flow" src={CCUserFlow} alt="component cloner user flow diagram"/>
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
-            <BottomNav/>
         </div>
     )
 }

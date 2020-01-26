@@ -41,7 +41,6 @@ function Cryptanna(props) {
                 </div>
             </div>
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
-            <BottomNav/>
         </div>
     )
 }

@@ -33,7 +33,6 @@ function ProjectGuppi(props) {
                 <img className="sponsor-day" height="250px" src={GuppiPoster} alt="Project Guppi team in front of project poster"/>
             </div>
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
-            <BottomNav/>
         </div>
     )
 }
