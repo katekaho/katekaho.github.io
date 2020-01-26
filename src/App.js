@@ -9,7 +9,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  withRouter
+  withRouter,
+  HashRouter
 } from "react-router-dom";
 import ThemeFontSelector from './components/ThemeFontSelector/ThemeFontSelector';
 import About from './components/About/About';
@@ -150,7 +151,7 @@ function App() {
                   background: `linear-gradient(180deg, ${colorPalette[0]} 0%, rgba(255, 255, 255, 0) 100%)`,
                   fontFamily: defaultFont ? null : 'OpenDyslexic'
                 }}>
-      <Router>
+      <HashRouter basename="/">
         <ScrollToTop/>
 
       <div className="top-content-container">
@@ -203,7 +204,7 @@ function App() {
               />
             ))}
 
-      </Router>
+      </HashRouter>
     </div>
   );
 }
