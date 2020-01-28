@@ -1,0 +1,119 @@
+.sidebar-container {
+    overflow-x: hidden;
+    text-align: center;
+    z-index: 10;
+    justify-content: center;
+}
+
+.logo {
+    margin: 30px 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-container {
+        display: flex;
+        height: 60px;
+    }
+
+    .sidebar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 80%;
+        /* order: -1; */
+        /* min-width: 300px; */
+        /* border-radius: 0 0 40px 0; */
+        /* position: fixed; */
+    }
+
+    .logo svg {
+        height: 34px;
+    }
+
+    .logo {
+        margin: 0 0 8px 0;
+    }
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-info {
+        flex-direction: row;
+        align-items: center;
+        /* margin: 60px 0 50px 0; */
+    }
+}
+
+.site-title {
+    font-size: 45px;
+    margin: 0 0 4px 0;
+}
+
+.site-title-caption {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-title {
+        font-size: 34px;
+        margin: 0;
+        display: none;
+    }
+    
+    .site-title-caption {
+        font-size: 14px;
+        margin: 0;
+        display: none;
+    }
+}
+
+.site-title, .site-title-caption {
+    color: white;
+}
+
+.navbar-list .link {
+    text-decoration: none;
+}
+
+
+.navbar-item {
+    height: 45px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 45px;
+    outline: solid 1px rgb(218, 218, 218);
+}
+
+.selected {
+    background-color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navbar-list {
+    padding: 0;
+    margin: 20px 0 20px 0;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-list {
+        margin: 0;
+        display: flex;
+    }
+    .navbar-item {
+        border-radius: 10px 10px 0 0;
+        outline: none;
+        height: auto;
+        text-align: center;
+        font-size: 24px;
+        padding: 0 20px;
+        margin: 4px 1px 0 1px;
+    }
+}

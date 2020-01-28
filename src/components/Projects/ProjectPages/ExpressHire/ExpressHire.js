@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectText from '../../ProjectText/ProjectText';
 import { Link } from 'react-router-dom';
+import BottomNav from '../../../BottomNav/BottomNav';
 
 
 const tasks = [
@@ -24,6 +25,7 @@ function ExpressHire(props) {
                 tasks={tasks}
             />
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
+            <BottomNav/>
         </div>
     )
 }

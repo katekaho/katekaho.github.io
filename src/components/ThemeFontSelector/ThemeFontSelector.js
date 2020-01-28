@@ -5,11 +5,13 @@ import "./ThemeFontSelector.css";
 export default class ThemeFontSelector extends Component {
     render() {
         return (
-            <div className="selector-wrapper">
+            <div className="selector-wrapper"
+            style={{background: this.props.palette[0]}}
+            >
                 <div className="selector">
                     <p className="button-label"
                         style={{color: this.props.palette[6]}}>
-                        Color theme
+                        Theme color
                     </p>
                     <div className="button-container">
                         <button className="theme-button" onClick={() => this.props.newColor()}
@@ -21,7 +23,7 @@ export default class ThemeFontSelector extends Component {
                 <div className="selector">
                     <p className="button-label"
                         style={{color: this.props.palette[6]}}>
-                        Font family
+                        Font
                     </p>
                     <div className="button-container">
                         <button className="theme-button" onClick={() => this.props.setFontDefault()} 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.scss';
 import Home from './components/Home/Home';
-import Sidebar from './components/Sidebar/Sidebar';
 import palette from 'google-palette';
 import { useMediaQuery } from 'react-responsive';
 import { AnimatedSwitch } from 'react-router-transition';
@@ -22,6 +21,7 @@ import Causeway from './components/Projects/ProjectPages/Causeway/Causeway';
 import Cryptanna from './components/Projects/ProjectPages/Cryptanna/Cryptanna';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import BottomNav from './components/BottomNav/BottomNav';
+import Navbar from './components/Navbar/Navbar';
 
 const paletteOptions = [
   'cb-Greys',
@@ -69,57 +69,57 @@ function App() {
     {
       path: "/",
       exact: true,
-      sidebar: () => <Sidebar selected="home" palette={colorPalette}/>,
+      sidebar: () => <Navbar selected="home" palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]} currentPage={"home"}/>,
       main: () => <Home palette={colorPalette}/>
     },
     {
       path: "/about",
-      sidebar: () => <Sidebar selected="about" palette={colorPalette}/>,
+      sidebar: () => <Navbar selected="about" palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]} currentPage={"about"}/>,
       main: () => <About titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects",
       exact: true,
-      sidebar: () => <Sidebar selected="projects" palette={colorPalette}/>,
+      sidebar: () => <Navbar selected="projects" palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]} currentPage={"projects"}/>,
       main: () => <Projects titleColor={colorPalette[6]}/>
     },
     {
       path: "/art",
       exact: true,
-      sidebar: () => <Sidebar selected="art" palette={colorPalette}/>,
+      sidebar: () => <Navbar selected="art" palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]} currentPage={"art"}/>,
       main: () => <Art titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/express-hire",
-      sidebar: () => <Sidebar palette={colorPalette}/>,
+      sidebar: () => <Navbar palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]}/>,
       main: () => <ExpressHire titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/component-cloner",
-      sidebar: () => <Sidebar palette={colorPalette}/>,
+      sidebar: () => <Navbar palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]}/>,
       main: () => <ComponentCloner titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/project-guppi",
-      sidebar: () => <Sidebar palette={colorPalette}/>,
+      sidebar: () => <Navbar palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]}/>,
       main: () => <ProjectGuppi titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/causeway",
-      sidebar: () => <Sidebar palette={colorPalette}/>,
+      sidebar: () => <Navbar palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]}/>,
       main: () => <Causeway titleColor={colorPalette[6]}/>
     },
     {
       path: "/projects/cryptanna",
-      sidebar: () => <Sidebar palette={colorPalette}/>,
+      sidebar: () => <Navbar palette={colorPalette}/>,
       bottombar: () => <BottomNav backgroundColor={colorPalette[5]}/>,
       main: () => <Cryptanna titleColor={colorPalette[6]}/>
     },
@@ -188,21 +188,13 @@ function App() {
               atLeave={{ opacity: 0 }}
               atActive={{ opacity: 1 }}
               mapStyles={(styles) => {
-                if (!isDesktopOrLaptop) {
                   return {
                       position: (styles.foo <= 1) ? 'relative': 'absolute',
                       width: '100%',
                       height: '100%',
-                      opacity: styles.opacity
+                      opacity: styles.opacity,
+                      background: `linear-gradient(180deg, ${colorPalette[0]} 0%, rgba(255, 255, 255, 0) 100%)`
                   }
-                } else {
-                  return {
-                    position: (styles.foo <= 1) ? 'relative': 'absolute',
-                    width: 'calc(100% - 300px)',
-                    height: 'calc(100vh - 500px)',
-                    opacity: styles.opacity
-                  }
-                }
               }}
               className="switch-wrapper">
 

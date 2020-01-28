@@ -1,13 +1,15 @@
 .selector-wrapper {
-    margin: 0 0 15px 30px;
+    padding: 0 0 15px 30px;
     display: flex;
 }
 
 @media only screen and (min-width: 768px) {
     .selector-wrapper {
         justify-content: flex-end;
+        z-index: 10;
+        padding: 0;
     }
-  }
+}
 
 .selector {
     align-items: flex-start;

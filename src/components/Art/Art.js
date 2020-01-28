@@ -200,7 +200,7 @@ const images = [
             <PageHeader 
                 titleColor={props.titleColor}
                 title="Art"
-                subtitle="Painting and more"
+                subtitle="Paintings and more"
                 description="In my free time I like to dabble in creating art. Here are some of my past works."
             />
             <ImageGallery items={images} className="image-gallery" showPlayButton={false}/>

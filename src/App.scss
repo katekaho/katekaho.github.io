@@ -5,10 +5,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .top-content-container {
-    display: flex;
-    flex-direction: row;
-  }
+  // .top-content-container {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
 }
 
 
@@ -24,10 +24,15 @@
 .main-content {
   overflow: hidden;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-container {
-  margin: 0 16px 0 50px;
+  // margin: 0 16px 0 50px;
+  margin: 0 auto;
+  width: 80%;
   max-width: 800px;
 }
 

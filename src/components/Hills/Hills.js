@@ -55,7 +55,7 @@ export default class Hills extends Component {
 
     render() {
         return (
-            <canvas className="canvas" ref="canvas" width="700px" height="500px"></canvas>
+            <canvas className="canvas" ref="canvas" width="1000px" height="500px"></canvas>
         )
     }
 }

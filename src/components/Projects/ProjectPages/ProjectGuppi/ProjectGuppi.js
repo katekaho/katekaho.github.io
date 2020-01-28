@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './ProjectGuppi.css';
 import GuppiPresentation from '../../../images/GuppiPresentation.jpg';
 import GuppiPoster from '../../../images/GuppiPoster.jpg';
+import BottomNav from '../../../BottomNav/BottomNav';
 
 
 const tasks = [
@@ -32,6 +33,7 @@ function ProjectGuppi(props) {
                 <img className="sponsor-day" src={GuppiPoster} alt="Project Guppi team in front of project poster"/>
             </div>
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
+            <BottomNav/>
         </div>
     )
 }

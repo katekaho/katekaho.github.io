@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Causeway.css';
 import causewayHome1 from '../../../images/CausewayHome1.png';
 import causewayHome2 from '../../../images/CausewayHome2.png';
+import BottomNav from '../../../BottomNav/BottomNav';
 
 function Causeway(props) {
     return (
@@ -24,6 +25,7 @@ function Causeway(props) {
             </div>
             
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
+            <BottomNav/>
         </div>
     )
 }

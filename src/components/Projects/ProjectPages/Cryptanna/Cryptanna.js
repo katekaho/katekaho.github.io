@@ -6,6 +6,7 @@ import CryptannaOriginal from '../../../images/CryptannaOriginal.png';
 import CryptannaOriginalScreens from '../../../images/CryptannaOriginalScreens.png';
 import CryptannaNew from '../../../images/CryptannaNew.png';
 import CryptannaNewScreens from '../../../images/CryptannaNewScreens.png';
+import BottomNav from '../../../BottomNav/BottomNav';
 
 function Cryptanna(props) {
     return (
@@ -40,6 +41,7 @@ function Cryptanna(props) {
                 </div>
             </div>
             <h3 className="back-link"><Link to="/projects">{"< Back to projects"}</Link></h3>
+            <BottomNav/>
         </div>
     )
 }

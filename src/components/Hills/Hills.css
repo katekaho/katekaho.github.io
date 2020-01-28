@@ -4,7 +4,8 @@
 
 @media only screen and (min-width: 768px) {
     .canvas {
-        margin: 0 0 0 -300px;
-        width: calc(100vw - 20px);
+        margin: 0;
+        width: 100vw;
+        /* height: 30vh; */
     }
 }
