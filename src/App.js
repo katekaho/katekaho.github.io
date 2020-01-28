@@ -177,12 +177,12 @@ function App() {
         
 
         <div className="main-content">
-        {isDesktopOrLaptop && <ThemeFontSelector 
+        {/* {isDesktopOrLaptop && <ThemeFontSelector 
             palette={colorPalette} 
             newColor={updateColor} 
             setColorGray={setToGray}
             setFontDefault={setToDefaultFont}
-            setFontDyslexic={setToDyslexicFont}/>}
+            setFontDyslexic={setToDyslexicFont}/>} */}
 
           <AnimatedSwitch atEnter={{ opacity: 0 }}
               atLeave={{ opacity: 0 }}
@@ -191,9 +191,9 @@ function App() {
                   return {
                       position: (styles.foo <= 1) ? 'relative': 'absolute',
                       width: '100%',
-                      height: '100%',
+                      height: 'calc(100% - 60px)',
                       opacity: styles.opacity,
-                      background: `linear-gradient(180deg, ${colorPalette[0]} 0%, rgba(255, 255, 255, 0) 100%)`
+                      background: `linear-gradient(180deg, ${colorPalette[1]} 0%, rgba(255, 255, 255, 0) 100%)`
                   }
               }}
               className="switch-wrapper">

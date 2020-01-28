@@ -1,15 +1,10 @@
-.home-container {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 @media only screen and (min-width: 768px) {
 
     .home-container {
-        height: calc(100vh - 160px);
-        /* width: calc(100vw - 450px); */
+        width: 70%;
+    }
+
+    .home-container h2 {
+        font-size: 22px;
     }
   }
