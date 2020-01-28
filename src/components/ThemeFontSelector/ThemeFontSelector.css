@@ -3,13 +3,6 @@
     display: flex;
 }
 
-@media only screen and (min-width: 768px) {
-    .selector-wrapper {
-        justify-content: flex-end;
-        z-index: 10;
-        padding: 0;
-    }
-}
 
 .selector {
     align-items: flex-start;
@@ -18,8 +11,29 @@
     margin: 12px 30px 0 0;
 }
 
+
+@media only screen and (min-width: 768px) {
+    .selector-wrapper {
+        justify-content: flex-end;
+        z-index: 10;
+        padding: 0;
+    }
+    .selector {
+        align-items: center;
+        flex-direction: row;
+        margin: 3px 60px 3px 0;
+    }
+}
+
 p {
     margin: 10px 10px 10px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        margin: 0;
+        line-height: auto;
+    }
 }
 
 .button-label {
@@ -35,4 +49,20 @@ p {
     border: none;
     margin: 0 8px 8px 0;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .button-label {
+        font-size: 18px;
+        font-weight: bold;
+        color: #6E016B;
+        margin: 0 10px 0 0;
+    }
+
+    .theme-button {
+        padding: 3px;
+        border-radius: 2px;
+        margin: 0 3px;
+        font-size: 16px;
+    }
 }

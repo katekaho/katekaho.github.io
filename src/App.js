@@ -156,7 +156,7 @@ function App() {
       <div className="top-content-container">
 
 
-        {!isDesktopOrLaptop && <ThemeFontSelector 
+        {<ThemeFontSelector 
               palette={colorPalette} 
               newColor={updateColor} 
               setColorGray={setToGray}
@@ -191,7 +191,7 @@ function App() {
                   return {
                       position: (styles.foo <= 1) ? 'relative': 'absolute',
                       width: '100%',
-                      height: 'calc(100% - 60px)',
+                      height: 'calc(100% - 96px)',
                       opacity: styles.opacity,
                       background: `linear-gradient(180deg, ${colorPalette[1]} 0%, rgba(255, 255, 255, 0) 100%)`
                   }

@@ -11,7 +11,7 @@ export default class ThemeFontSelector extends Component {
                 <div className="selector">
                     <p className="button-label"
                         style={{color: this.props.palette[6]}}>
-                        Theme color
+                        Theme color:
                     </p>
                     <div className="button-container">
                         <button className="theme-button" onClick={() => this.props.newColor()}
@@ -23,7 +23,7 @@ export default class ThemeFontSelector extends Component {
                 <div className="selector">
                     <p className="button-label"
                         style={{color: this.props.palette[6]}}>
-                        Font
+                        Font:
                     </p>
                     <div className="button-container">
                         <button className="theme-button" onClick={() => this.props.setFontDefault()} 
